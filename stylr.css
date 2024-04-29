@@ -1,0 +1,13 @@
+  /* Custom CSS styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .jumbotron {
+    background-image: url('laundry.jpeg');
+    background-size: contain;
+    color: #fff;
+  }
+  .services-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
