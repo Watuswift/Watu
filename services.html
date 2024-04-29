@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule Service Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h3>This service is not yet online</h3>
+
+<div class="container">
+  <h1>Schedule Service</h1>
+  <form id="scheduleForm">
+    <div class="form-group">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="">Select Service</option>
+        <option value="Dry Cleaning">Dry Cleaning</option>
+        <option value="Laundry Services">Laundry Services</option>
+        <option value="Institution Cleaning">Institution Cleaning</option>
+      </select>
+    </div>
+    <div id="details" class="form-group"></div>
+    <button type="submit">Schedule</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
