@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule Service Form with Payment</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="payment.css">
+</head>
+<body>
+      <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Swiftwatu Cleaners & Laundry</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://forms.office.com/r/sFPSUkYgLH">Discover</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://forms.gle/TwBchffdXiXVoVkg6">Apply Now</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<h2>Service is not online</h2>
+<h2>For booking you can contact us through our email: watuswiftcleaners@gmail.com</h2>
+<div class="container">
+  <h1>Schedule Service</h1>
+  <form id="scheduleForm">
+    <div class="form-group">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="">Select Service</option>
+        <option value="Dry Cleaning">Dry Cleaning</option>
+        <option value="Laundry Services">Laundry Services</option>
+        <option value="Institution Cleaning">Institution Cleaning</option>
+      </select>
+    </div>
+    <div id="details" class="form-group"></div>
+    <div class="form-group">
+      <label for="payment">Select Payment Method:</label>
+      <select id="payment" name="payment" required>
+        <option value="">Select Payment Method</option>
+        <option value="M-Pesa">M-Pesa</option>
+        <option value="Airtel Money">Airtel Money</option>
+        <option value="PayPal">PayPal</option>
+      </select>
+    </div>
+    <button type="submit">Schedule</button>
+  </form>
+</div>
+
+<script src="payment.js"></script>
+</body>
+</html>
